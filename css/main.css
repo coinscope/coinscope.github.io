@@ -1,0 +1,374 @@
+/* small reset */
+html, body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+h1, h2, h3, h4, h5, h6, p { 
+	margin: 0;
+	padding: 0;
+}
+img {
+	border: 0;
+}
+/*======================*/
+
+/* temporary visuals for better perception */
+header, main, footer, section {
+	min-height: 50px;
+	border-bottom: dotted 1px navy;
+}
+/*======================*/
+/* Connecting fonts (style from webfont.ru*/
+@font-face {
+    font-family: 'PT Sans';
+    src: local('PT Sans'), local('PTSans-Regular'), url('../fonts/PTS55F-webfont.eot') format('eot'), url('../fonts/PTS55F-webfont.woff') format('woff'), url('../fonts/PTS55F-webfont.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PT Sans Narrow';
+    src: local('PT Sans Narrow'), local('PTSans-Narrow'), url('../fonts/PTN57F-webfont.eot') format('eot'), url('../fonts/PTN57F-webfont.woff') format('woff'), url('../fonts/PTN57F-webfont.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Nautilus Pompilius';
+    src: local('Nautilus Pompilius'), local('NautilusPompilius'), url('../fonts/nautilus.eot') format('eot'), url('../fonts/nautilus.woff') format('woff'), url('../fonts/nautilus.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+/*======================*/
+
+body {
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 18px;
+	background-image: url('../img/header-bg.jpg');
+}
+.container {
+	width: 1000px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.clearfix:after {
+	content:'';
+	clear: both;
+	display: table;
+	overflow: auto;
+	zoom: 1; /*for IE6*/
+}
+
+header {
+	overflow: hidden;
+}
+.logo-holder {
+	width: 20%;
+	float:left;
+}
+.logo-holder img {
+	float: left;
+	margin-top: 30px;
+	max-width: 100%;
+	z-index: 10;
+}
+.contacts {
+	width: 30%;
+	float: right;
+}
+.header-text {
+	width: 50%;
+	float: left;
+	/*margin-left: 20%;
+	margin-right: 30%;*/
+}
+h2 {
+	color: #ff0000;
+	font-family: "Nautilus Pompilius";
+	font-size: 42px;
+	font-weight: normal;
+	text-align: center;
+	margin-top: 40px;
+}
+.header-text .left-line {
+	float: left;
+}
+.header-text .right-line {
+	float: right;
+}
+.contacts {
+	margin-top: 30px;
+	text-align: right;
+}
+.contacts .phone {
+	font-family: "PT Sans Narrow", "Arial Narrow";
+	font-size: 22px;
+	font-weight: bold; /* Separate bold font is not connected, so the par is not enough bold */
+	text-shadow: 0 0 1px; /* adding small shadow to compensate insufficient boldness */
+	margin-bottom: 5px;
+}
+.larger {
+	font-size: 160%;
+}
+.contacts .callback {
+	color: #ff4800;
+	margin-bottom: 15px;
+}
+.contacts .callback span {
+	border-bottom: dotted 1px #2025ff; /* using border insted of text-decoration */
+	position: relative; /* to embed phone icon :before */
+}
+.callback span::before {
+	content: '';
+	width: 26px;
+	height: 27px;
+	background: url('../img/call-ico.png') 0 0 no-repeat;
+	position: absolute;
+	left: -30px;
+}
+
+.contacts .worktime {
+	font-family: "PT Sans Narrow", "Arial Narrow";
+	font-size: 18px;
+}
+
+main {
+	/*background: url('../img/bg-orange.png') 50% 0 no-repeat;*/
+	/*background-size: 100% 539px;*/
+	margin-top: -20px;
+	overflow: hidden;
+}
+.bg-holder {
+	margin: 0 auto;
+	background: url('../img/bg-orange.png') 0 0 no-repeat;
+	height: 539px;
+	width: 1366px;
+}
+.bride {
+	float: left;
+	margin-left: -28px;
+}
+.bride img {
+	width: 606px;	
+}
+.cta-holder {
+	float: right;
+	margin-top: 45px;
+	width: 380px;
+	height: 417px;
+	background-color: rgba(0,0,0,0.2);
+	border-radius: 5px;
+}
+.cta {
+	margin: 2%;
+	width: 96%;
+	height: 96%;
+	background-color: #fafafa;
+	border-radius: 5px;
+}
+.cta h3 {
+	height: 53px;
+	width: 100%;
+	background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.1)) no-repeat rgba(0,0,0,0.1);
+	line-height: 53px;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 24px;
+	font-weight: normal;
+	border-radius: 5px 5px 0 0;
+}
+.mainform {
+	padding: 20px 25px;
+}
+form p:first-of-type {
+	text-align: center;
+}
+h1 {
+	color: #24bec3;
+	font-family: "Nautilus Pompilius";
+	font-size: 42px;
+	font-weight: normal;
+	text-align: center;
+	position: relative;
+}
+.mask {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: red;
+}
+
+button, input {
+  font: inherit;
+  margin: 0;
+  width: 100%;
+  -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+     -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+          box-sizing: border-box;
+}
+/*normalizing for old browsers*/
+button {
+  overflow: visible;
+  text-transform: none;
+}
+section {
+	overflow: hidden;
+}
+section h2 {
+	font-size: 48px;
+	margin-bottom: 30px;
+	margin-top: 15px;
+	padding-top: 40px;
+}
+.offer h2 {
+	background: url('../img/bg-star.png') 50% 0 no-repeat;
+}
+.left-column {
+	float: left;
+	width: 48%;
+	margin-right: 2%;
+	text-align: right;
+}
+.right-column {
+	float: right;
+	width: 48%;
+	margin-left: 2%;
+}
+.spring {
+	background: url('../img/bg_ul_offers.png') 50% 0 repeat-Y;
+}
+.offer hr {
+	border: 0;
+	height: 16px;
+	background: url('../img/li-line.png') no-repeat;
+}
+.left-column p {
+	margin-right: 162px;
+}
+.left-column img {
+	width: 162px;
+	height: auto;
+	float: right;
+	margin-right: -162px;
+	margin-top: 10px;
+}
+.right-column p {
+	margin-left: 162px;
+}
+.right-column img {
+	width: 162px;
+	height: auto;
+	float: left;
+	margin-left: -162px;
+	margin-top: 10px;
+}
+.results h2, .clients h2 {
+	margin-top: 30px;
+	background: url('../img/bg-scissors.png') 50% 0 no-repeat;
+}
+.menu-holder {
+	text-align: center;
+}
+/*офомляем клиентов списком*/
+.client-list {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 0;
+}
+.client-list li {
+	list-style-type: none;
+	display: inline-block;
+	width: 225px;
+	height: 145px;
+	background: url('../img/clients-mask.png') 0 0 /cover no-repeat white;
+	margin: 12px 10px;
+	padding: 0;
+}
+.client-list li img {
+	display: block;
+	margin: 1px auto 0;
+}
+/* Раздел схема работы */
+.workflow h2 {
+	margin-top: 30px;
+	background: url('../img/bg-barrel.png') 50% 0 no-repeat;
+}
+.flow {
+	padding-top: 60px;
+}
+
+.step {
+	width: 166px;
+	margin-right: 112px;
+	float: left;
+	/*overflow: visible;*/
+	position: relative;
+}
+.step:last-child {
+	margin-right: 0;
+}
+.step-bottom {
+	height: 169px;
+	background: url("../img/step_bg.png") 50% bottom no-repeat;
+	line-height: 151px;
+	text-align: center;
+	position: relative;
+}
+.step-bottom img {
+	vertical-align: middle;
+}
+.step-top {
+	position: absolute;
+	top: -61px;
+	left: 0;
+}
+.step-left {
+	width: 163px;
+	height: 81px;
+	background: url('../img/step_left.png') 0 0 no-repeat;
+	left: 43px;
+}
+.step-right {
+	width: 163px;
+	height: 81px;
+	background: url('../img/step_right.png') 0 0 no-repeat;
+	left: -43px;
+}
+.step-center {
+	width: 258px;
+	height: 81px;
+	background: url('../img/step_center.png') 0 0 no-repeat;
+	left: -41px;
+}
+.step-top p {
+	/*position: absolute;*/
+	color: white;
+	font-size: 32px;
+	background-color: #ff4800;
+	text-align: center;
+	line-height: 60px;
+	vertical-align: middle;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	margin-top: 10px;
+}
+.step-left p {
+	margin-left: 10px;
+	margin-right: auto;
+}
+.step-right p {
+	margin-left: auto;
+	margin-right: 10px;
+}
+.step-center p {
+	margin-left: 93px;
+	margin-right: auto;
+}
+img.arrow {
+	position: absolute;
+	bottom: 5px;
+	right: -95px;
+}
