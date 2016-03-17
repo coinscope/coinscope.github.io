@@ -13,12 +13,13 @@ img {
 }
 /*======================*/
 
-/* temporary visuals for better perception */
+/* temporary visuals for better perception 
 header, main, footer, section {
 	min-height: 50px;
 	border-bottom: dotted 1px navy;
 }
-/*======================*/
+======================*/
+
 /* Connecting fonts (style from webfont.ru*/
 @font-face {
     font-family: 'PT Sans';
@@ -153,7 +154,7 @@ main {
 }
 .cta-holder {
 	float: right;
-	margin-top: 45px;
+	margin-top: 60px;
 	width: 380px;
 	height: 417px;
 	background-color: rgba(0,0,0,0.2);
@@ -296,7 +297,7 @@ section h2 {
 	background: url('../img/bg-barrel.png') 50% 0 no-repeat;
 }
 .flow {
-	padding-top: 60px;
+	padding-top: 60px;	
 }
 
 .step {
@@ -343,7 +344,6 @@ section h2 {
 	left: -41px;
 }
 .step-top p {
-	/*position: absolute;*/
 	color: white;
 	font-size: 32px;
 	background-color: #ff4800;
@@ -371,4 +371,40 @@ img.arrow {
 	position: absolute;
 	bottom: 5px;
 	right: -95px;
+}
+/* повтор блока с формой */
+.offer-rep {
+	margin-top: 50px;
+}
+.wedding {
+	float: left;
+	margin-left: 76px;
+	margin-top: 16px;
+}
+.wedding img {
+	width: 444px;
+}
+
+/*footer*/
+footer hr {
+	border: 0;
+	height: 15px;
+	background: url('../img/bg-footer.png') no-repeat;
+}
+.copyright {
+	float: left;
+	width: 50%;
+}
+.agency {
+	float: right;
+	width: 50%;
+	text-align: right;
+	
+}
+.agency p {
+	font-family: "PT Sans Narrow", "Arial Narrow";
+
+}
+.agency img {
+	vertical-align: middle;
 }
