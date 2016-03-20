@@ -1,0 +1,83 @@
+/* Example wrapper */
+.wrap {
+	position: relative;
+	margin: 3em 0;
+}
+
+/* Frame */
+.frame {
+	height: 300px;
+	overflow: hidden;
+}
+.frame ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-size: 50px;
+}
+.frame ul li {
+	float: left;
+	width: 400px;
+	/*height: 100%;*/
+	margin: 0 1px 0 0;
+	padding: 0;
+	/*background: #333;*/
+	color: #ddd;
+	text-align: center;
+	cursor: pointer;
+}
+.frame ul li.active {
+	color: #fff;
+	/*background: #a03232;*/
+}
+
+/* Scrollbar */
+.scrollbar {
+	width: 100%;
+	margin: 20px 0 1em 0;
+	height: 10px;
+	border: solid 1px #9dabb8;
+	border-radius: 5px;
+	background: #f0f0f0;
+	line-height: 0;
+}
+.scrollbar .handle {
+	height: 8px;
+	width: 80px;
+	background: linear-gradient(to right, #cdd5cd, #b5c2cb) #b3c0ca;
+	border: solid 1px #9dabb8;
+	border-radius: 4px;
+	cursor: pointer;
+}
+/*.scrollbar .handle .mousearea {
+	position: absolute;
+	top: -9px;
+	left: 0;
+	width: 100%;
+	height: 20px;
+}*/
+
+.move {
+	position: absolute;
+	width: 46px;
+	height: 46px;
+	border-radius: 50%;
+	/*border: solid 1px red;*/
+	cursor: pointer;
+	top: 137px;
+	background: url('../img/slider-arr.png') 0 0 no-repeat;
+}
+.prev {
+	left: -75px;
+}
+.next {
+	right: -75px;
+	background-position: -46px 0;
+}
+.prev:hover {
+	background-position: 0 -92px;
+}
+.next:hover {
+	background-position: -46px -92px;
+}
