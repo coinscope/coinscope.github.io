@@ -183,6 +183,8 @@ main {
 }
 form p:first-of-type {
 	text-align: center;
+	margin-bottom: 10px;
+
 }
 h1 {
 	color: #24bec3;
@@ -213,6 +215,78 @@ button {
   overflow: visible;
   text-transform: none;
 }
+
+.mainform input {
+	padding: 8px;
+	border: solid 1px #b0b2b8;
+	border-radius: 0;
+	border-bottom: 0;
+}
+
+.mainform input[name="name"] {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.mainform input[name="email"] {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom: solid 1px #b0b2b8;
+}
+
+input:required {
+	background: url('../img/sure-ico.png') 98% 20% no-repeat;
+}
+
+.button-holder {
+	margin: 10px 0;
+}
+.mainform button {
+	padding: 5px;
+	border-radius: 5px;
+	border: 0;
+	font-size: 24px;
+	color: white;
+	background-color: #ff0000;
+	cursor: pointer;
+	box-shadow: 1px 1px 1px white inset,
+				-1px -1px 1px grey inset;
+}
+.mainform button:active {
+	box-shadow: 0;
+}
+.caret {
+	position: relative;
+	height:0;
+	width:0;
+	visibility: hidden;
+}
+
+.caret::after {
+	content: '';
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	border-left: solid 8px white;
+	border-top: solid 7px transparent;
+	border-bottom: solid 7px transparent;
+}
+button:hover .caret {
+	visibility: visible;
+}
+
+.policy {
+	text-align: right;
+}
+.policy a, .policy a:visited {
+	color: #b0b2b8;
+}
+
+.policy a:hover {
+	text-decoration: overline;
+}
+
+
 section {
 	overflow: hidden;
 }

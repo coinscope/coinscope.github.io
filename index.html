@@ -4,6 +4,14 @@
 	<title>Организация свадеб: закажи свадьбу своей мечты!</title>
 	<meta charset="utf-8">
 	<link href="css/main.css" rel="stylesheet">
+
+	<!-- Adding scripts and styles for gallery -->
+	<script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
+	<script type="text/javascript" src="js/plugins.js"></script>
+	<script type="text/javascript" src="js/sly.min.js"></script>
+	<script type="text/javascript" src="js/horizontal.js"></script>
+	<link rel="stylesheet" href="css/sly.css">
+
 </head>
 <body>
 
@@ -25,7 +33,7 @@
 		</div>
 	</header>
 
-	<main> 
+	<main class="clearfix"> 
 		<!-- Проблема с "волнами" на изображениях при изменении размера экрана -->
 		<!-- для решения проблемы вводим блок с размером под изображением и расположение фона "0 0" вместо "50% 0" в мейне -->
 		<div class="bg-holder">
@@ -51,9 +59,9 @@
 								<input type="email" name="email" id="email" placeholder="E-mail" />
 							</p>
 							<p class="button-holder">
-								<button type="submit">Оставить заявку</button>
+								<button type="submit">Оставить заявку<span class="caret"></span></button>
 							</p>
-							<p class="policy">Политика конфиденциальности</p>
+							<p class="policy"><a href="" onclick="">политика конфиденциальности</a></p>
 						</form>
 					</div>
 				</div>
@@ -103,7 +111,41 @@
 
 		<div class="menu-holder">
 			<div class="container">
-				<img src="img/img01.png" alt="пока вместо меню" />
+				<!-- <img src="img/img01.png" alt="пока вместо меню" /> -->
+				
+				<!-- inserting slider -->
+
+			<div class="wrap">
+
+				<div class="controls center">
+					<div class="move prev"></div>
+					<div class="move next"></div>
+				</div>
+
+				<div class="frame" id="forcecentered">
+    			<ul class="clearfix">
+		        <li><a href="img/wedding1.jpg"><img src="img/wedding1_tn.jpg" alt=""/></a></li>
+		        <li><img src="img/wedding2_tn.jpg" /></li>
+		        <li><img src="img/weddingM_tn.jpg" /></li>
+		        <li><img src="img/wedding3_tn.jpg" /></li>
+		        <li><img src="img/wedding4_tn.jpg" /></li>
+		        <li><img src="img/wedding5_tn.jpg" /></li>
+		        <li><img src="img/wedding6_tn.jpg" /></li>
+		        <li><img src="img/wedding7_tn.jpg" /></li>
+			    </ul>
+				</div>
+
+				<div class="scrollbar">
+    			<div class="handle">
+    				<div class="mousearea"></div>
+    			</div>
+				</div>
+
+			</div>
+
+			<!-- end slider -->
+
+
 			</div>
 		</div>
 	</section>
@@ -187,7 +229,7 @@
 				<div class="cta-holder">
 					<div class="cta">
 						<h3>Форма обратной связи</h3>
-						<form class="mainform" name="topform">
+						<form class="mainform" name="bottomform">
 							<!-- <h1>
 								<span class="mask"></span>
 								Закажи свадьбу своей мечты</h1> -->
@@ -202,9 +244,9 @@
 								<input type="email" name="email" id="email" placeholder="E-mail" />
 							</p>
 							<p class="button-holder">
-								<button type="submit">Оставить заявку</button>
+								<button type="submit">Оставить заявку<span class="caret"></span></button>
 							</p>
-							<p class="policy">Политика конфиденциальности</p>
+							<p class="policy"><a href="" onclick="">политика конфиденциальности</a></p>
 						</form>
 					</div>
 				</div>
